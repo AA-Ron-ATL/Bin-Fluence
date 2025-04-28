@@ -27,30 +27,43 @@
       animation: fadeIn 2s ease forwards, float 6s ease-in-out infinite;
     }
 
+    h1, p, .small-text {
+      opacity: 0;
+      animation: fadeInText 2s ease forwards;
+    }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
+      animation-delay: 2.2s;
     }
 
     p {
       font-size: 1.25rem;
       margin-bottom: 0.5rem;
+      animation-delay: 2.6s;
     }
 
     .small-text {
       margin-top: 2rem;
       font-size: 1rem;
       color: #777;
+      animation-delay: 3s;
     }
 
-    /* Fade in the logo */
+    /* Animations */
     @keyframes fadeIn {
       to {
         opacity: 1;
       }
     }
 
-    /* Gently float the logo up and down */
+    @keyframes fadeInText {
+      to {
+        opacity: 1;
+      }
+    }
+
     @keyframes float {
       0%, 100% {
         transform: translateY(0px);
